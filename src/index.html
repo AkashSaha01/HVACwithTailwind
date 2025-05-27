@@ -8,191 +8,125 @@
 </head>
   </head>
   <body>
-    <section
-      class="h-screen w-auto"
-      style="background-image: url('./images/leafbg2.jpg')"
-    >
-      <nav class="flex justify-center p-4">
-        <div
-          class="flex items-center justify-between w-full max-w-7xl bg-white px-8 py-4 rounded-full shadow-md"
-        >
-          <!-- Logo -->
-          <div class="text-green-900 font-bold text-2xl">
-            Cool<span class="text-green-800">Quest</span>
-          </div>
+    <section class="bg-[url('./images/leafbg2.jpg')] bg-cover bg-center min-h-screen w-full">
+  <!-- Navigation -->
+  <nav class="flex justify-center p-4">
+    <div class="flex flex-wrap items-center justify-between w-full max-w-7xl bg-white px-6 py-4 rounded-full shadow-md">
+      
+      <div class="text-green-900 font-bold text-2xl">
+        Cool<span class="text-green-800">Quest</span>
+      </div>
 
-          <!-- Navigation Links -->
-          <ul class="flex gap-8 text-base font-medium text-black">
-            <li>
-              <a href="#" class="hover:text-green-700 font-bold">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-700 font-bold">Services</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-700 font-bold">Past Work</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-green-700 font-bold">Reviews</a>
-            </li>
-          </ul>
+      
+      <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-base font-medium text-black mt-4 md:mt-0">
+        <li><a href="#" class="hover:text-green-700 font-bold">About Us</a></li>
+        <li><a href="#" class="hover:text-green-700 font-bold">Services</a></li>
+        <li><a href="#" class="hover:text-green-700 font-bold">Past Work</a></li>
+        <li><a href="#" class="hover:text-green-700 font-bold">Reviews</a></li>
+      </ul>
 
-          <!-- Quote Button -->
-          <a
-            href="#"
-            class="bg-green-800 text-white font-medium px-6 py-2 rounded-full hover:bg-green-700 transition"
-          >
-            Get Free Quote
-          </a>
+      
+      <a href="#" class="bg-green-800 text-white font-medium px-6 py-2 rounded-full hover:bg-green-700 transition mt-4 md:mt-0">
+        Get Free Quote
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4 md:px-6 py-12 gap-10">
+    
+    <div class="md:w-1/2 space-y-6 text-center md:text-left">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl text-amber-50 font-bold leading-tight">
+        Reliable HVAC for <br />Every Season
+      </h1>
+
+      <ul class="space-y-2 text-lg">
+        <li class="flex items-center gap-2 justify-center md:justify-start text-amber-50">
+          <i class="fa-solid fa-certificate text-amber-50"></i> Certified & Experienced Technicians
+        </li>
+        <li class="flex items-center gap-2 justify-center md:justify-start text-amber-50">
+          <i class="fa-solid fa-clock text-amber-50"></i> Fast, Reliable Service
+        </li>
+        <li class="flex items-center gap-2 justify-center md:justify-start text-amber-50">
+          <i class="fa-solid fa-money-bill-1 text-amber-50"></i> Transparent, Affordable Pricing
+        </li>
+      </ul>
+
+      
+      <form class="bg-white p-4 rounded-lg text-black flex flex-col gap-4 max-w-md w-full mx-auto md:mx-0">
+        <input type="text" placeholder="Name" class="border rounded-md px-4 py-2 w-full" />
+        <input type="text" placeholder="Phone" class="border rounded-md px-4 py-2 w-full" />
+        <select class="border rounded-md px-4 py-2 w-full">
+          <option>Service</option>
+          <option>AC Repair</option>
+          <option>Installation</option>
+        </select>
+        <button type="submit" class="bg-green-800 text-white px-6 py-2 rounded-md hover:bg-green-700 w-full">
+          Submit
+        </button>
+      </form>
+
+      
+      <div class="pt-4 text-sm text-white">
+        <span class="font-semibold">Certified Installer</span><br />
+        <div class="flex items-center gap-6 mt-2 justify-center md:justify-start">
+          <img src="" alt="GAF" class="h-6" />
+          <img src="" alt="Lennox" class="h-6" />
+          <img src="" alt="American Standard" class="h-6" />
         </div>
-      </nav>
-      <!-- Hero Section -->
-      <section
-        class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 py-12 gap-8"
-      >
-        <!-- Left Content -->
-        <div class="md:w-1/2 space-y-6">
-          <h1
-            class="text-4xl text-amber-50 md:text-5xl font-bold leading-tight"
-          >
-            Reliable HVAC for <br />
-            Every Season
-          </h1>
+      </div>
+    </div>
 
-          <ul class="space-y-2 text-lg">
-            <li class="flex items-center gap-2 text-amber-50">
-             <i class="fa-solid fa-certificate text-amber-50"></i> Certified & Experienced Technicians
-            </li>
-            <li class="flex items-center gap-2 text-amber-50">
-             <i class="fa-solid fa-clock text-amber-50"></i> Fast, Reliable Service
-            </li>
-            <li class="flex items-center gap-2 text-amber-50">
-              <i class="fa-solid fa-money-bill-1 text-amber-50"></i> Transparent, Affordable Pricing
-            </li>
-          </ul>
+    
+    <div class="md:w-1/2 flex flex-col items-center space-y-6">
+      
+      <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-lg">
+        <img src="./images/hero-model.png" alt="heroImage" class="rounded-xl w-full h-auto" />
 
-          <!-- Form -->
-          <form
-            class="bg-white p-4 rounded-lg text-black flex flex-wrap gap-4 max-w-md"
-          >
-            <input
-              type="text"
-              placeholder="Name"
-              class="border rounded-md px-4 py-2 flex-1"
-            />
-            <input
-              type="text"
-              placeholder="Phone"
-              class="border rounded-md px-4 py-2 flex-1"
-            />
-            <select class="border rounded-md px-4 py-2 flex-1">
-              <option>Service</option>
-              <option>AC Repair</option>
-              <option>Installation</option>
-            </select>
-            <button
-              type="submit"
-              class="bg-green-800 text-white px-6 py-2 rounded-md hover:bg-green-700"
-            >
-              Submit
-            </button>
-          </form>
-
-          <!-- Certified Installers -->
-          <div class="pt-4 text-sm text-white">
-            <span class="font-semibold">Certified Installer</span><br />
-            <div class="flex items-center gap-6 mt-2">
-              <img
-                src=""
-                alt="GAF"
-                class="h-6"
-              />
-              <img
-                src=""
-                alt="Lennox"
-                class="h-6"
-              />
-              <img
-                src=""
-                alt="American Standard"
-                class="h-6"
-              />
-            </div>
-          </div>
+        
+        <div class="absolute top-4 left-4 bg-white text-yellow-600 text-xs font-semibold rounded-full px-4 py-2 shadow-md">
+          ⭐ 5 Years Warranty
         </div>
 
-        <!-- Right Content -->
-        <div class="md:w-1/2 flex flex-col items-center space-y-4">
-          <!-- Technician Image -->
-          <div class="relative">
-            <img
-              src="./images/hero-model.png"
-              alt="heroImage"
-              class="rounded-xl w-140 h-auto"
-            />
-
-            <!-- Badge -->
-            <div
-              class="absolute top-4 left-4 bg-white text-yellow-600 text-xs font-semibold rounded-full px-4 py-2 shadow-md"
-            >
-              ⭐ 5 Years Warranty
-            </div>
-
-            <!-- ID Badge -->
-            <div
-              class="absolute top-4 right-2 bg-white text-gray-800 text-sm px-3 py-1 rounded-md shadow"
-            >
-             <i class="fa-solid fa-shield-halved"></i> C20-987654
-            </div>
-
-            <!-- Rating -->
-            <div
-              class="absolute bottom-4 left-4 bg-white text-gray-800 text-sm px-3 py-1 rounded-full shadow flex  items-center gap-1"
-            >
-              <img
-                src="./images/G_icon.png"
-                class="w-8 h-8"
-              />
-              4.8 (698)
-            </div>
-          </div>
-
-          <!-- Detail Cards -->
-          <div class="grid grid-cols-2 gap-5">
-            <div class="relative">
-              <img
-                src="./images/herodown1.jpg"
-                class="rounded-md w-60 h-35 object-cover"
-              />
-              <button
-                class="absolute bottom-2 left-2 bg-green-800 text-white px-3 py-1 rounded text-xs"
-              >
-                View Details
-              </button>
-            </div>
-            <div class="relative">
-              <img
-                src="./images/herodown2.jpg"
-                class="rounded-md w-60 h-35 object-cover"
-              />
-              <button
-                class="absolute bottom-2 left-2 bg-green-800 text-white px-3 py-1 rounded text-xs"
-              >
-                View Details
-              </button>
-            </div>
-          </div>
+        
+        <div class="absolute top-4 right-2 bg-white text-gray-800 text-sm px-3 py-1 rounded-md shadow">
+          <i class="fa-solid fa-shield-halved"></i> C20-987654
         </div>
-      </section>
-    </section>
+
+      
+        <div class="absolute bottom-4 left-4 bg-white text-gray-800 text-sm px-3 py-1 rounded-full shadow flex items-center gap-1">
+          <img src="./images/G_icon.png" class="w-8 h-8" />
+          4.8 (698)
+        </div>
+      </div>
+
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
+        <div class="relative">
+          <img src="./images/herodown1.jpg" class="rounded-md w-full h-36 object-cover" />
+          <button class="absolute bottom-2 left-2 bg-green-800 text-white px-3 py-1 rounded text-xs">
+            View Details
+          </button>
+        </div>
+        <div class="relative">
+          <img src="./images/herodown2.jpg" class="rounded-md w-full h-36 object-cover" />
+          <button class="absolute bottom-2 left-2 bg-green-800 text-white px-3 py-1 rounded text-xs">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
 <div>
  <div class="max-w-6xl mx-auto px-6 py-4">
-        <!-- Title -->
+        
         <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
             Trusted by Families Like Yours
         </h2>
         
-        <!-- Cards 2nd section -->
+     
         <div class="grid md:grid-cols-3 gap-6 mb-8">
           
             <div class="bg-white rounded-lg p-6 shadow-md">
@@ -269,33 +203,32 @@
   <h2 class="text-2xl font-semibold mb-8">Your Trusted HVAC Experts</h2>
 
   <div class="flex flex-wrap justify-center gap-10">
-    <!-- ISO 9001 -->
+    
     <div class="flex flex-col items-center w-40">
       <img src="./images/iso-9001.jpg" alt="ISO 9001 Certified" class="h-16 mb-2" />
       <p class="font-semibold">ISO 9001 Certified</p>
       <p class="text-sm text-gray-600">Quality Management for HVAC Excellence</p>
     </div>
 
-    <!-- ISO 14001 -->
+    
     <div class="flex flex-col items-center w-40">
       <img src="./images/iso-14001-certification-label-vector-1811356.jpg" alt="ISO 14001 Certification" class="h-16 mb-2" />
       <p class="font-semibold">ISO 14001 Certification</p>
       <p class="text-sm text-gray-600">Eco-Friendly HVAC Solutions</p>
     </div>
 
-    <!-- EPA Certified -->
     <div class="flex flex-col items-center w-40">
       <img src="./images/epa.jpg" alt="EPA Certified" class="h-16 mb-2" />
       <p class="font-semibold">EPA Certified</p>
     </div>
 
-    <!-- BBB Accredited -->
+    
     <div class="flex flex-col items-center w-40">
       <img src="./images/bbb.jpg" alt="BBB Accredited" class="h-16 mb-2" />
       <p class="font-semibold">BBB Accredited</p>
     </div>
 
-    <!-- NATE Certified -->
+
     <div class="flex flex-col items-center w-40">
       <img src="./images/NATE-405x270.jpg" alt="NATE Certified" class="h-16 mb-2" />
       <p class="font-semibold">NATE Certified</p>
